@@ -4,6 +4,8 @@
 Blank page
 {% endblock %}
 
+{% import 'articles.json' as articles %}
+
 {% block main %}
 
 <div class="app-account-header">
@@ -40,32 +42,108 @@ Blank page
     </div>
 
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-third"> 
+      <div class="govuk-grid-column-one-third">
         <h3 class="govuk-heading-m">Employers</h3>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-bottom-9">
+      <div class="govuk-grid-column-one-third">
         <ul class="govuk-list">
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
+          {% for article in articles %}
+          <li><a class="govuk-link no-line" href="{{article.url}}">{{article.title}}</a></li>
+          {% endfor %}
         </ul>
       </div>
-
       <div class="govuk-grid-column-one-third">
-        <h3 class="govuk-heading-m">Training providers</h3>
         <ul class="govuk-list">
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <ul class="govuk-list">
+          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
         </ul>
       </div>
     </div>
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-m">Training providers</h3>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-bottom-9">
+      <div class="govuk-grid-column-one-third">
+        <ul class="govuk-list">
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <ul class="govuk-list">
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <ul class="govuk-list">
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <h2 class="govuk-heading-m">Contact the apprenticeship service</h2>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        
+      </div>
+    </div>
+
   </div>
 </div>
 
