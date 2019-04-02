@@ -2,11 +2,11 @@
 	background: $govuk-link-colour;
 	padding: $govuk-gutter 0;
 
-  .govuk-heading-l {
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 20px;
-  }
+	.govuk-heading-l {
+		color: white;
+		margin-bottom: 15px;
+		margin-top: 20px;
+	}
 }
 
 .app-account-main {
@@ -14,118 +14,123 @@
 }
 
 .govuk-header {
-    border-bottom: none;
+	border-bottom: none;
 
-    .govuk-header__container {
-      margin-bottom: 0;
-      border-bottom: none;
-    }
-  }
-
-  .gem-c-search {
-      position: relative;
-      margin-bottom: 30px;
-  }
-
- .gem-c-search__label {
-    font-size: 19px;
-    line-height: 40px;
-    display: block;
+	.govuk-header__container {
+		margin-bottom: 0;
+		border-bottom: none;
+	}
 }
 
- .gem-c-search__label {
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 40px;
-    position: absolute;
-    left: 15px;
-    top: 1px;
-    z-index: 1;
-    color: #6f777b;
-}
+.gem-c-search {
+	position: relative;
+	margin-bottom: 30px;
 
-.gem-c-search__item-wrapper {
-    display: table;
-    width: 100%;
-    background: #fff;
+	.gem-c-search__label {
+		font-size: 19px;
+		line-height: 40px;
+		display: block;
+		font-family: "nta", Arial, sans-serif;
+		font-weight: 400;
+		text-transform: none;
+		font-size: 16px;
+		line-height: 40px;
+		position: absolute;
+		left: 15px;
+		top: 1px;
+		z-index: 1;
+		color: #6f777b;
+	}
+
+	.gem-c-search__item-wrapper {
+		display: table;
+		width: 100%;
+		background: #fff;
+	}
 }
 
 .gem-c-search__input[type="search"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 16px;
-    line-height: 1.75;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding: 6px;
-    // margin: 0.5em 0;
-    width: 100%;
-    height: 40px;
-    border: 0;
-    background: #fff;
-    border-radius: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "nta", Arial, sans-serif;
+	font-weight: 400;
+	text-transform: none;
+	font-size: 16px;
+	line-height: 1.75;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 6px;
+	// margin: 0.5em 0;
+	width: 100%;
+	height: 40px;
+	border: 0;
+	background: #fff;
+	border-radius: 0;
+
+	&:focus, &.focus {
+		z-index: 2;
+	}
+	&:focus {
+		outline: 3px solid #ffbf47;
+		outline-offset: 0;
+	}
 }
 
 input[type="search"] {
-    font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
-    text-transform: none;
-    font-size: 14px;
-    line-height: 1.1428571429;
-    border: 1px solid #bbb;
-    min-width: 8em;
-    margin: 0 0.5em;
-    padding: 0.25em;
+	font-family: "nta", Arial, sans-serif;
+	font-weight: 400;
+	text-transform: none;
+	font-size: 14px;
+	line-height: 1.1428571429;
+	border: 1px solid #bbb;
+	min-width: 8em;
+	// margin: 0 0.5em;
+	padding: 0.25em;
 }
 
 input[type="search"] {
-    -webkit-appearance: textfield;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
 }
 
 .gem-c-search__item {
-    position: relative;
-    display: table-cell;
-    vertical-align: top;
+	position: relative;
+	display: table-cell;
+	vertical-align: top;
 }
 
 .gem-c-search__submit-wrapper {
-    width: 1%;
+	width: 1%;
 }
 
 .gem-c-search--on-govuk-blue .gem-c-search__submit {
-    background-color: #0b0c0c;
-    color: #fff;
+	background-color: #0b0c0c;
+	color: #fff;
 }
 
 .gem-c-search__submit {
-    background-size: 52.5px auto;
-    background-position: 3% 15%;
+	background-size: 52.5px auto;
+	background-position: 3% 15%;
 }
 
 .gem-c-search__submit {
-    position: relative;
-    padding: 0;
-    width: 40px;
-    height: 40px;
-    background-image: url(https://assets.publishing.service.gov.uk/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png);
-    background-repeat: no-repeat;
-    background-position: -15px 50%;
-    text-indent: -5000px;
-    overflow: hidden;
+	position: relative;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url(https://assets.publishing.service.gov.uk/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png);
+	background-repeat: no-repeat;
+	background-position: -15px 50%;
+	text-indent: -5000px;
+	overflow: hidden;
 }
 
 .gem-c-search__submit {
-    padding: 6px;
-    border: 0;
-    cursor: pointer;
-    border-radius: 0;
+	padding: 6px;
+	border: 0;
+	cursor: pointer;
+	border-radius: 0;
 }

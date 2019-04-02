@@ -1,0 +1,338 @@
+[
+  {
+    "title": "Add or make changes to an apprentice",
+    "synopsis": "After you recruit a new apprentice, you need to add them to your organisation’s apprenticeship account.",
+    "user": ["employer"]
+  },
+  {
+    "title": "Pay and transfer apprenticeship funds",
+    "synopsis": "You can get an account for the apprenticeship service if you’re:",
+    "user": ["employer", "training provider"],
+    "url": "pay-and-transfer"
+  },
+  {
+    "title": "Access your account",
+    "synopsis": "You will need to ring us and we will add a new user to your account.",
+    "user": ["employer", "training provider"]
+  },
+  {
+    "title": "English percentage",
+    "synopsis": "This is the amount of your organisation’s payroll that gets paid to employees who live in England.",
+    "user": ["employer"]
+  },
+  {
+    "title": "Transfer apprenticeship funds",
+    "synopsis": "Find out how to set up and make a transfer.",
+    "user": ["employer"]
+  },
+  {
+    "title": "Apprenticeship funding",
+    "synopsis": "Funding help for apprentices in England.",
+    "user": ["employer", "training provider"]
+  },
+  {
+    "title": "Register for an apprenticeship service account",
+    "synopsis": "Who can get an account and how to register.",
+    "user": ["employer"]
+  },
+  {
+    "title": "Adding apprentices",
+    "synopsis": "How to add apprentices to your manage apprentices account",
+    "user": ["employer"]
+  },
+  {
+    "title": "Payments into account",
+    "synopsis": "Making payments into account",
+    "user": ["employer"]
+  },
+  {
+    "title": "How to register",
+    "synopsis": "How to register for an apprenticeship service account",
+    "user": ["employer"]
+  },
+  {
+    "title": "How it will work",
+    "synopsis": "The process of apprenticeship funding",
+    "user": ["employer"]
+  },
+  {
+    "title": "SNOW update",
+    "synopsis": "The latest SNOW updates",
+    "user": ["employer"]
+  },
+  {
+    "title": "Government gateway - PAYE link",
+    "synopsis": "Using government gateway to manage PAYE",
+    "user": ["employer"]
+  },
+  {
+    "title": "Other",
+    "synopsis": "All other enquiry types",
+    "user": ["employer"]
+  },
+  {
+    "title": "Payments out query",
+    "synopsis": "Queries about payments",
+    "user": ["employer"]
+  },
+  {
+    "title": "PAYE scheme",
+    "synopsis": "The PAYE scheme explained",
+    "user": ["employer"]
+  },
+  {
+    "title": "Username and password",
+    "synopsis": "Username and password rules",
+    "user": ["employer"]
+  },
+  {
+    "title": "Adding organisations",
+    "synopsis": "How to add an organisation to your manage apprenticeships account",
+    "user": ["employer"]
+  },
+  {
+    "title": "Connected company",
+    "synopsis": "Connected company",
+    "user": ["employer"]
+  },
+  {
+    "title": "Invitation issues",
+    "synopsis": "How to resolves issues with invitations",
+    "user": ["employer"]
+  },
+  {
+    "title": "Assigning user roles",
+    "synopsis": "Assign user roles within your manage apprenticeships account",
+    "user": ["employer"]
+  },
+  {
+    "title": "Training provider listed as employer",
+    "synopsis": "For training providers who are also employers",
+    "user": ["employer"]
+  },
+  {
+    "title": "Backdating apprentices",
+    "synopsis": "Paying apprentices",
+    "user": ["employer"]
+  },
+  {
+    "title": "Amending live apprentices",
+    "synopsis": "You can make changes to to live apprentices by:",
+    "user": ["employer"]
+  },
+  {
+    "title": "23% public sector",
+    "synopsis": "23% public sector explained",
+    "user": ["employer"]
+  },
+  {
+    "title": "Co-investment",
+    "synopsis": "In order to set up co-investment…",
+    "user": ["employer"]
+  },
+  {
+    "title": "ESFA agreement",
+    "synopsis": "The agreement with the education and skills funding agency",
+    "user": ["employer"]
+  },
+  {
+    "title": "Data lock",
+    "synopsis": "Data locks occur when…",
+    "user": ["employer"]
+  },
+  {
+    "title": "Account set up",
+    "synopsis": "Guidance on account set up and admin",
+    "user": ["employer"]
+  },
+  {
+    "title": "English percentage",
+    "synopsis": "The English percentage represents the amount of…",
+    "user": ["employer"]
+  },
+  {
+    "title": "HMRC query",
+    "synopsis": "If you have been contacted by HMRC then…",
+    "user": ["employer"]
+  },
+  {
+    "title": "Government gateway - agent login",
+    "synopsis": "Allowing access to government gateway for agents…",
+    "user": ["employer"]
+  },
+  {
+    "title": "Account owner has left",
+    "synopsis": "Gaining access to an account once the registered owner has left",
+    "user": ["employer"]
+  },
+  {
+    "title": "Assisted digital support",
+    "synopsis": "All apprenticeship service services are accessible to all.",
+    "user": ["employer"]
+  },
+  {
+    "title": "Verification code",
+    "synopsis": "You will be sent a verification code when…",
+    "user": ["employer"]
+  },
+  {
+    "title": "Standards/frameworks",
+    "synopsis": "Standards and frameworks explained",
+    "user": ["employer"]
+  },
+  {
+    "title": "Government gateway support",
+    "synopsis": "Get help accessing government gateway",
+    "user": ["employer"]
+  },
+  {
+    "title": "Other",
+    "synopsis": "General advice for training providers",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Adding apprentices",
+    "synopsis": "To add an apprentice you need to…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "ILR issues",
+    "synopsis": "All current ILR issues are shown on this page",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Data lock",
+    "synopsis": "Data locks occur when…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "SNOW update",
+    "synopsis": "The latest SNOW updates",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Payments query",
+    "synopsis": "If you have a question about payments…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Approving cohorts",
+    "synopsis": "To approve a cohort, first sign into your…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "How it will work",
+    "synopsis": "The process of apprenticeship funding",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Backdating apprentices",
+    "synopsis": "Paying apprentices",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Amending live apprentices",
+    "synopsis": "You can make changes to to live apprentices by:",
+    "user": ["training provider"]
+  },
+  {
+    "title": "How to register",
+    "synopsis": "How to register for an apprenticeship service account",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Update existing apprentices",
+    "synopsis": "If you already have an apprentice and need to make changes to…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "IdAMS",
+    "synopsis": "IdAMS is used to…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Co-investing",
+    "synopsis": "In order to set up co-investment…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "The hub",
+    "synopsis": "The hub is used to…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Agreement - training provider",
+    "synopsis": "The agreement that training providers have to accept is shown on this page.",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Amending cohorts",
+    "synopsis": "If you already have a cohort and would like to make changes…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Bulk upload",
+    "synopsis": "To uploading a large amount of…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Assisted digital support",
+    "synopsis": "All apprenticeship service services are accessible to all.",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Username and password",
+    "synopsis": "Username and password rules",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Standards/frameworks",
+    "synopsis": "Standards and frameworks explained",
+    "user": ["training provider"]
+  },
+  {
+    "title": "10% transfers (no longer in use)",
+    "synopsis": "10% transfers are no longer in use.",
+    "user": ["training provider"]
+  },
+  {
+    "title": "R14 hard close",
+    "synopsis": "R14 hard close is when…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Verify employer/confirm employer",
+    "synopsis": "In order to work with an employer you must…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Account downtime/known issue",
+    "synopsis": "Current known issues are shown on this page.",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Verification code",
+    "synopsis": "You will be sent a verification code when…",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Requests in progress (no longer in use)",
+    "synopsis": "Requests in progress are no longer in use",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Registration date (no longer in use)",
+    "synopsis": "Registration date is no longer in use",
+    "user": ["training provider"]
+  },
+  {
+    "title": "23% public sector",
+    "synopsis": "23% public sector explained",
+    "user": ["training provider"]
+  },
+  {
+    "title": "Offline contract",
+    "synopsis": "If you would like to view your signed contract offline…",
+    "user": ["training provider"]
+  }
+]
