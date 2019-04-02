@@ -10,6 +10,20 @@ var articles = require('./views/articles.json')
 module.exports = router
 
 // search
+router.get('/', (req, res) => {
+	req.session.data['articles'] = articles
+
+	req.session.data['employer-articles'] = articles.filter( function(article) {
+		return _.contains(article.user, 'employer')
+	})
+
+	req.session.data['training-provider-articles'] = articles.filter( function(article) {
+		return _.contains(article.user, 'training provider')
+	})
+
+	res.render('index')
+})
+
 router.post('/search', (req, res) => {
 	var options = {
 		keys: ['title', 'synopsis']

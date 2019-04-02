@@ -43,26 +43,22 @@ Blank page
       <div class="govuk-grid-column-one-third"> 
         <h3 class="govuk-heading-m">Employers</h3>
         <ul class="govuk-list">
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
+          {% for article in data['employer-articles'] %}
+          {% if loop.index <= 10 %}
+          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
 
       <div class="govuk-grid-column-one-third">
         <h3 class="govuk-heading-m">Training providers</h3>
         <ul class="govuk-list">
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
+          {% for article in data['training-provider-articles'] %}
+          {% if loop.index <= 10 %}
+          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </div>
