@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Blank page
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+	<div class="govuk-grid-column-two-thirds">
+		<h2 class="govuk-heading-l">Search results matching "{{data['search']}}"</h2>
+
+		{% for result in data['search-results'] %}
+		<h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+			<a href="{{result.url}}" style="text-decoration: none">{{result.title}}</a>
+		</h2>
+
+		<div class="govuk-!-margin-bottom-2">
+			{% for user in result.user %}
+			<span class="govuk-tag govuk-!-font-size-14" style="background: #ddd; color: #222">{{user}}</span>
+			{% endfor %}
+		</div>
+
+		<p class="govuk-!-font-size-16">
+			{{result.synopsis}}
+		</p>
+		{% endfor %}
+
+	</div>
+</div>
+
+
+
+{% endblock %}

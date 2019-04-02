@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Blank page
+Blank page
 {% endblock %}
 
 {% block main %}
@@ -9,43 +9,35 @@
 <div class="app-account-header">
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Search all enquiry types</h1>
 
-</div>
-
-<div class="govuk-grid-column-two-thirds">
-  <h1 class="govuk-heading-l">Search all enquiry types</h1>
-
-<form action="/form-handler" method="post" novalidate>
-  <div class="gem-c-search gem-c-search--on-govuk-blue" data-module="gem-toggle-input-class-on-focus">
-  <label for="search-main-de722307" class="gem-c-search__label">
-  Enter your search query
-  </label>
-  <div class="gem-c-search__item-wrapper">
-    <input type="search" value="" id="search-main-de722307" name="q" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
-      <div class="gem-c-search__item gem-c-search__submit-wrapper">
-        <button type="submit" class="gem-c-search__submit">Search</button>
-      </div>
-    </div>
-  </div>
-</form>
-
+        <form action="/search" method="post" novalidate>
+          <div class="gem-c-search gem-c-search--on-govuk-blue">
+            <label for="search" class="gem-c-search__label">
+              Enter your search query
+            </label>
+            <div class="gem-c-search__item-wrapper">
+              <input type="search" value="" id="search" name="search" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+              <div class="gem-c-search__item gem-c-search__submit-wrapper">
+                <button type="submit" class="gem-c-search__submit">Search</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </div>
 
 {% block content %}
-
 <div class="app-account-main">
-<div class="govuk-width-container">
-  <div class="govuk-grid-row">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h2 class="govuk-heading-l">Top 30 enquiries</h2>
       </div>
     </div>
-
-
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third"> 
@@ -60,6 +52,7 @@
           <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
         </ul>
       </div>
+
       <div class="govuk-grid-column-one-third">
         <h3 class="govuk-heading-m">Training providers</h3>
         <ul class="govuk-list">
@@ -72,10 +65,9 @@
           <li><a class="govuk-link" href="pay-transfer-funds">Pay and transfer apprenticeship funds</a></li>
         </ul>
       </div>
-
-      </div>
     </div>
   </div>
+</div>
 
 {% endblock %}
 {% endblock %}
