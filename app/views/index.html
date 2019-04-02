@@ -56,16 +56,11 @@ Blank page
       </div>
       <div class="govuk-grid-column-one-third">
         <ul class="govuk-list">
-          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link no-line" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link no-line" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          {% for article in data['employer-articles'] %}
+          {% if loop.index <= 10 %}
+          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
       <div class="govuk-grid-column-one-third">
@@ -93,16 +88,11 @@ Blank page
     <div class="govuk-grid-row govuk-!-padding-bottom-9">
       <div class="govuk-grid-column-one-third">
         <ul class="govuk-list">
-          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="add-or-make-changes-to-an-apprentice">Add or make changes to an apprentice</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
-          <li><a class="govuk-link" href="pay-and-transfer-apprenticeship-funds">Pay and transfer apprenticeship funds</a></li>
+          {% for article in data['training-provider-articles'] %}
+          {% if loop.index <= 10 %}
+          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          {% endif %}
+          {% endfor %}
         </ul>
       </div>
       <div class="govuk-grid-column-one-third">
@@ -140,7 +130,7 @@ Blank page
         <h2 class="govuk-heading-m">Contact the apprenticeship service</h2>
       </div>
       <div class="govuk-grid-column-one-half">
-        
+
       </div>
     </div>
 
