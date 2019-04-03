@@ -1,5 +1,5 @@
 .app-account-header {
-	background: $govuk-link-colour;
+	background: linear-gradient(to bottom left, govuk-colour('light-purple'), govuk-colour('purple'));
 	padding: $govuk-gutter 0;
 
 	.govuk-heading-l {
@@ -47,6 +47,16 @@
 		width: 100%;
 		background: #fff;
 	}
+
+	&.gem-c-search--on-white {
+
+			border: 2px solid #000;
+
+		.gem-c-search__submit {
+			background-color: #0b0c0c;
+			color: #fff;
+		}
+	}
 }
 
 .gem-c-search__input[type="search"] {
@@ -61,7 +71,6 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	padding: 6px;
-	// margin: 0.5em 0;
 	width: 100%;
 	height: 40px;
 	border: 0;
@@ -136,5 +145,5 @@ input[type="search"] {
 }
 
 .no-line {
-  text-decoration: none;
+	text-decoration: none;
 }

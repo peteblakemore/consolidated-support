@@ -9,13 +9,31 @@ Blank page
 {% from "back-link/macro.njk" import govukBackLink %}
 
 {{ govukBackLink({
-  text: "Back",
-  href: "index"
+	text: "Back",
+	href: "index"
 }) }}
 
 <div class="govuk-grid-row">
 	<div class="govuk-grid-column-two-thirds">
-		<h2 class="govuk-heading-l">Search results matching "{{data['search']}}"</h2>
+		<h2 class="govuk-heading-l">Search results matching <span class="govuk-visually-hidden">"{{data['search']}}"</span></h2>
+
+		<form action="/search" method="post" novalidate>
+			<div class="gem-c-search gem-c-search--on-white">
+				<label for="search" class="gem-c-search__label">
+					Enter your question
+				</label>
+				<div class="gem-c-search__item-wrapper">
+					<input type="search" value="{{data['search']}}" id="search" name="search" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
+					<div class="gem-c-search__item gem-c-search__submit-wrapper">
+						<button type="submit" class="gem-c-search__submit">Search</button>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<p>
+			{{data['search-results'].length}} results found
+		</p>
 
 		{% for result in data['search-results'] %}
 		<h2 class="govuk-heading-m govuk-!-margin-bottom-1">

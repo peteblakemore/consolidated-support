@@ -24,7 +24,7 @@ $large-input-size: 50px;
 	height: $input-size;
 	border: 0;
 	background: govuk-colour("white");
-  border-radius: 0; //otherwise iphones apply an automatic border radius
+	border-radius: 0;
 }
 
 .gem-c-search__submit {
@@ -36,6 +36,10 @@ $large-input-size: 50px;
 }
 
 .gem-c-search--on-govuk-blue {
+	.gem-c-search__input[type="search"] {
+		border: 1px solid #ccc;
+	}
+
 	.gem-c-search__label {
 		color: govuk-colour("white");
 	}
