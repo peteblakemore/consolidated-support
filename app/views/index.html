@@ -45,7 +45,7 @@ Blank page
         <ul class="govuk-list">
           {% for article in data['employer-articles'] %}
           {% if loop.index <= 10 %}
-          <li><a class="govuk-link no-line" href="{{article.url}}">{{article.title}}</a></li>
+          <li><a class="govuk-link no-line" href="articles/{{article.url}}">{{article.title}}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
@@ -56,7 +56,7 @@ Blank page
         <ul class="govuk-list">
           {% for article in data['training-provider-articles'] %}
           {% if loop.index <= 10 %}
-          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          <li><a class="govuk-link no-line" href="articles/{{article.url}}">{{article.title}}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
