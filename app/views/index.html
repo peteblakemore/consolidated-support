@@ -4,20 +4,18 @@
 Blank page
 {% endblock %}
 
-{% import 'articles.json' as articles %}
-
 {% block main %}
 
 <div class="app-account-header">
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">Search all enquiry types</h1>
+        <h1 class="govuk-heading-l">Search apprenticeships help</h1>
 
         <form action="/search" method="post" novalidate>
           <div class="gem-c-search gem-c-search--on-govuk-blue">
             <label for="search" class="gem-c-search__label">
-              Enter your search query
+              Enter your question
             </label>
             <div class="gem-c-search__item-wrapper">
               <input type="search" value="" id="search" name="search" title="Search" class="gem-c-search__item gem-c-search__input js-class-toggle">
@@ -37,28 +35,28 @@ Blank page
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h2 class="govuk-heading-l">Top 30 enquiries</h2>
+        <h2 class="govuk-heading-l">Top 10 enquiries</h2>
       </div>
     </div>
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-row govuk-!-padding-bottom-7">
+      <div class="govuk-grid-column-one-half">
         <h3 class="govuk-heading-m">Employers</h3>
         <ul class="govuk-list">
           {% for article in data['employer-articles'] %}
           {% if loop.index <= 10 %}
-          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          <li><a class="govuk-link no-line" href="articles/{{article.url}}">{{article.title}}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
       </div>
 
-      <div class="govuk-grid-column-one-third">
+      <div class="govuk-grid-column-one-half">
         <h3 class="govuk-heading-m">Training providers</h3>
         <ul class="govuk-list">
           {% for article in data['training-provider-articles'] %}
           {% if loop.index <= 10 %}
-          <li><a class="govuk-link" href="{{article.url}}">{{article.title}}</a></li>
+          <li><a class="govuk-link no-line" href="articles/{{article.url}}">{{article.title}}</a></li>
           {% endif %}
           {% endfor %}
         </ul>
@@ -69,9 +67,60 @@ Blank page
       <div class="govuk-grid-column-one-half">
         <h2 class="govuk-heading-m">Contact the apprenticeship service</h2>
       </div>
-      <div class="govuk-grid-column-one-half">
+
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-s">By phone</h3>
+        <p>Telephone: 0300 123 4567<br>
+        Monday to Friday, 8am to 10pm<br>
+        <a href="#">Find out about call charges</a></p>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-s">By email</h3>
+        <p>Email address: help@apprenticeships.gov.uk<br>
+        We aim to respond to all email enquiries within 24 hours</p>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-s">Send us a message</h3>
+        <p>We aim to respond to all enquiries within 24 hours</p>
+
+
+
+
+        <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="name">
+              Name
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-hint">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="email-address">
+              Email address
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text" aria-describedby="email-address">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="your-message">
+              Your message
+            </label>
+            <textarea class="govuk-textarea" id="your-message" name="your-message" rows="5" aria-describedby="your-message-hint"></textarea>
+          </div>
+
+
+
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
+
+        </form>
+
+
+
+
 
       </div>
+
     </div>
 
   </div>
