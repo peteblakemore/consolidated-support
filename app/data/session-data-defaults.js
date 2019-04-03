@@ -17,8 +17,17 @@ Example usage:
 
 */
 
+var _ = require('underscore');
+var articles = require('../views/articles.json')
+
 module.exports = {
 
-  // Insert values here
+  'employer-articles': articles.filter( function(article) {
+  	return _.contains(article.user, 'employer')
+  }),
+
+  'training-provider-articles': articles.filter( function(article) {
+  	return _.contains(article.user, 'training provider')
+  })
 
 }
