@@ -18,7 +18,7 @@ Blank page
 		<h2 class="govuk-heading-l">Search results matching <span class="govuk-visually-hidden">"{{data['search']}}"</span></h2>
 
 		<form action="/search" method="post" novalidate>
-			<div class="gem-c-search gem-c-search--on-white">
+			<div class="gem-c-search gem-c-search--on-govuk-blue" style="border: solid 2px black;">
 				<label for="search" class="gem-c-search__label">
 					Enter your question
 				</label>
@@ -30,6 +30,8 @@ Blank page
 				</div>
 			</div>
 		</form>
+
+
 
 		<p>
 			{{data['search-results'].length}} results found
