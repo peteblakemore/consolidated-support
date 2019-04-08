@@ -17,7 +17,7 @@ Blank page
 	<div class="govuk-grid-column-two-thirds">
 		<h2 class="govuk-heading-l">Search results matching <span class="govuk-visually-hidden">"{{data['search']}}"</span></h2>
 
-		<form action="/search" method="post" novalidate>
+		<form action="/search" novalidate>
 			<div class="gem-c-search gem-c-search--on-white">
 				<label for="search" class="gem-c-search__label">
 					Enter your question
@@ -34,10 +34,10 @@ Blank page
 
 
 		<p>
-			{{data['search-results'].length}} results found
+			{{results.length}} results found
 		</p>
 
-		{% for result in data['search-results'] %}
+		{% for result in results %}
 		<h2 class="govuk-heading-m govuk-!-margin-bottom-1">
 			<a href="articles/{{result.url}}" style="text-decoration: none">{{result.title}}</a>
 		</h2>

@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 	res.render('index')
 })
 
-router.post('/search', (req, res) => {
+function search(req,res) {
 	var options = {
 		threshold: 0.3,
 		keys:
@@ -33,7 +33,17 @@ router.post('/search', (req, res) => {
 	var fuse = new Fuse(articles, options)
 	var searchQuery = req.session.data['search']
 
-	req.session.data['search-results'] = fuse.search(searchQuery)
+	return fuse.search(searchQuery);
+}
 
-	res.redirect('search')
+router.get('/search', (req, res) => {
+	var results = search(req,res)
+
+	res.render('search', {results})
+})
+
+router.post('/search', (req, res) => {
+	var results = search(req,res)
+	
+	res.render('search', {results})
 })
