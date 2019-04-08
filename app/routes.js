@@ -19,7 +19,16 @@ router.get('/', (req, res) => {
 
 router.post('/search', (req, res) => {
 	var options = {
-		keys: ['title', 'synopsis']
+		threshold: 0.3,
+		keys:
+		[{
+			name: 'title',
+			weight: 0.6
+		},
+		{
+			name: 'synopsis',
+			weight: 0.4
+		}]
 	}
 	var fuse = new Fuse(articles, options)
 	var searchQuery = req.session.data['search']
