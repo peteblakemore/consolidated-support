@@ -111,6 +111,15 @@ input[type="search"] {
 	color: #fff;
 }
 
+
+.gem-c-search--on-white {
+	border: solid 2px black;
+
+	.gem-c-search__submit {
+		background-color: #0b0c0c;
+	}
+}
+
 .gem-c-search__submit {
 	background-size: 52.5px auto;
 	background-position: 3% 15%;
