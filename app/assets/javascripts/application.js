@@ -31,4 +31,21 @@ $(document).ready(function () {
 			toggleTarget.removeClass('focus');
 		}
 	}
+
 })
+
+var jsButton = document.querySelector(".js-button")
+jsButton.addEventListener("click", showHide)
+
+console.log("%cFIXED IT", "font-size: 22px;")
+
+function showHide(event) {
+	console.log(event);
+	event.preventDefault();
+	var form = document.getElementById("contactForm");
+	if (form.style.display === "block") {
+			form.style.display = "none";
+	} else {
+		form.style.display = "block";
+	}
+}
