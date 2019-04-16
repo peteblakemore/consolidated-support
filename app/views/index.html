@@ -68,13 +68,13 @@ Blank page
         <h2 class="govuk-heading-m">Contact the apprenticeship service</h2>
       </div>
 
-      <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-5">
         <h3 class="govuk-heading-s">By phone</h3>
         <p>Telephone: 0300 123 4567<br>
         Monday to Friday, 8am to 10pm<br>
         <a href="#">Find out about call charges</a></p>
       </div>
-      <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-5">
         <h3 class="govuk-heading-s">By email</h3>
         <p>Email address: help@apprenticeships.gov.uk<br>
         We aim to respond to all email enquiries within 24 hours</p>
@@ -83,44 +83,42 @@ Blank page
 
 
 
-
-      <div class="govuk-grid-column-two-thirds" id="contactForm">
+      <div class="govuk-grid-column-two-thirds"">
         <h3 class="govuk-heading-s">Send us a message</h3>
-        <p>We aim to respond to all enquiries within 24 hours</p>
-        <form method="post" novalidate>
-          <div class="govuk-form-group">
-            <label class="govuk-label govuk-label--s" for="name">
-              Name
-            </label>
-            <input class="govuk-input govuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-hint">
-          </div>
-          <div class="govuk-form-group">
-            <label class="govuk-label govuk-label--s" for="email-address">
-              Email address
-            </label>
-            <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text" aria-describedby="email-address">
-          </div>
-          <div class="govuk-form-group">
-            <label class="govuk-label govuk-label--s" for="your-message">
-              Your message
-            </label>
-            <textarea class="govuk-textarea" id="your-message" name="your-message" rows="5" aria-describedby="your-message-hint"></textarea>
-          </div>
-          <button class="govuk-button js-button">
-            Send message
-          </button>
-        </form>
       </div>
 
+      <div class="govuk-grid-column-two-thirds js-contact-form">
 
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="name">
+            Name
+          </label>
+          <input class="govuk-input govuk-input--width-20" id="name" name="name" type="text" aria-describedby="name-hint">
+        </div>
 
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="email-address">
+            Email address
+          </label>
+          <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text" aria-describedby="email-address">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="your-message">
+            Your message
+          </label>
+          <textarea class="govuk-textarea" id="your-message" name="your-message" rows="5" aria-describedby="your-message-hint"></textarea>
+        </div>
+        <!-- <button class="govuk-button js-submit-form">Send message</button> -->
+        <button class="govuk-button js-submit-form">Send message</button>
+      </div>
 
-
-
-
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-bottom-5 js-form-confirm js-hidden">
+        <p>Your message has been sent.</p>
+        <p>We aim to respond to all enquiries within 24 hours.</p>
+        <p>Your reference number is <span class="govuk-!-font-weight-bold">KLM908723.</span></p>
+      </div>
 
     </div>
-
   </div>
 </div>
 
